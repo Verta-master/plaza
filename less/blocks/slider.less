@@ -12,8 +12,8 @@
   
   .swiper-slide {
     position: relative;
-    width: 880px;
-    height: 452px;
+    width: 730px;
+    height: 440px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,16 +33,25 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(0,0,0,0.4);
+      background-color: rgba(0,0,0,0.6);
     }
   }
   
   .swiper-slide-active {
-    height: 530px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+    height: 500px;
     
     &::before {
       display: none;
     }
   }
+}
+
+.slider__prev {
+  top: 50%;
+  left: ~"calc(50% - 500px)";
+}
+
+.slider__next {
+  top: 50%;
+  right: ~"calc(50% - 500px)";
 }
