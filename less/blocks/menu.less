@@ -1,0 +1,37 @@
+.menu__btn {
+  padding-left: 55px;
+  font: inherit;
+  color: #fff;
+  background-image: url(../img/icon-menu.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 35px 21px;
+}
+
+.menu__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  z-index: 5;
+  top: 100%;
+  left: 20px;
+  right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgba(255,255,255,0.15);
+}
+
+.menu__link {
+  font-size: 15px;
+  .transition();
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: #bd8659;
+    .transition();
+  }
+}
