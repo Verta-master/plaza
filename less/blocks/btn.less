@@ -9,4 +9,18 @@
   width: 355px;
   height: 50px;
   background-image: linear-gradient(to top, rgb(138,98,65) 0%, rgb(189,134,89) 100%);
+  
+  &:hover,
+  &:active {
+    animation: ease btn-hover 1s forwards;
+  }
+}
+
+@keyframes btn-hover {
+  from {
+    background-image: linear-gradient(to top, rgb(138,98,65) 0%, rgb(189,134,89) 100%);
+  }
+  to {
+    background-image: linear-gradient(to top, rgb(138,98,65) 0%, rgb(138,98,65) 100%);
+  }
 }

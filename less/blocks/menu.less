@@ -8,17 +8,21 @@
   background-size: 35px 21px;
 }
 
+.menu__wrap {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: 100%;
+  left: 20px;
+  right: 20px;
+}
+
 .menu__list {
   .reset();
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
-  z-index: 5;
-  top: 100%;
-  left: 20px;
-  right: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: rgba(255,255,255,0.15);
