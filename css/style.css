@@ -477,6 +477,7 @@ button {
   border-radius: 25px;
   width: 355px;
   height: 50px;
+  max-width: 100%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#8a6241), to(#bd8659));
   background-image: linear-gradient(to top, #8a6241 0%, #bd8659 100%);
 }
@@ -959,4 +960,192 @@ address {
 .slider__next {
   top: 50%;
   right: calc(50% - 500px);
+}
+.review {
+  padding-bottom: 80px;
+}
+.review__slider {
+  width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.review__prev {
+  top: 50%;
+  left: 0;
+}
+.review__next {
+  top: 50%;
+  right: 0;
+}
+.review__slide {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 225px;
+  padding-right: 225px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+.review__slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 580px;
+  border: 1px solid #8d6443;
+  z-index: -1;
+}
+.review__slide::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 730px;
+  height: 250px;
+  background-color: #fff;
+  z-index: -1;
+}
+.review__img {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+.review__img img {
+  display: block;
+}
+.review__name {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+.review__info {
+  position: relative;
+  text-align: justify;
+}
+.review__info::before,
+.review__info::after {
+  content: "";
+  position: absolute;
+  width: 41px;
+  height: 29px;
+  background-image: url(../img/icon-quotes.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.review__info::before {
+  top: -15px;
+  left: -62px;
+}
+.review__info::after {
+  bottom: -10px;
+  right: -62px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.review__btn {
+  width: 280px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer {
+  position: relative;
+  z-index: 0;
+  color: #fff;
+  background-color: #000;
+  background-image: url(../img/bg-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.footer__menu-btn {
+  display: none;
+}
+.footer__menu {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.footer__link {
+  font-size: 17px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__link:hover,
+.footer__link:active,
+.footer__link--active {
+  color: #bd8659;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__logo img {
+  width: 181px;
+  height: auto;
+}
+.footer__contacts {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.mail:hover,
+.mail:active {
+  text-decoration: underline;
 }
