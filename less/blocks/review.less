@@ -1,11 +1,12 @@
 .review {
-  padding-bottom: 80px;
+  padding-bottom: 85px;
 }
 
 .review__slider {
   width: 1030px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
 }
 
 .review__prev {
@@ -34,8 +35,10 @@
     left: 50%;
     transform: translateX(-50%);
     width: 580px;
-    border: 1px solid #8d6443;
     z-index: -1;
+    border: 2px solid #8d6443; 
+    border-image-source: linear-gradient(to top, rgb(138,98,65), rgb(189,134,89));
+    border-image-slice: 2;
   }
   
   &::after {
@@ -69,7 +72,7 @@
 
 .review__name {
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: 500;
   text-align: center;
 }
@@ -90,12 +93,12 @@
   }
   
   &::before {
-    top: -15px;
+    top: -12px;
     left: -62px;
   }
   
   &::after {
-    bottom: -10px;
+    bottom: -8px;
     right: -62px;
     transform: rotate(180deg);
   }
