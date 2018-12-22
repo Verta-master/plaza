@@ -473,6 +473,7 @@ button {
           align-items: center;
   color: #fff;
   text-transform: uppercase;
+  font-size: 17px;
   font-weight: 700;
   border-radius: 25px;
   width: 355px;
@@ -483,31 +484,47 @@ button {
 }
 .btn:hover,
 .btn:active {
-  -webkit-animation: ease btn-hover 1s forwards;
-          animation: ease btn-hover 1s forwards;
+  -webkit-animation: ease btn-hover 0.2s forwards;
+          animation: ease btn-hover 0.2s forwards;
 }
 @-webkit-keyframes btn-hover {
-  from {
+  0% {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#8a6241), to(#bd8659));
     background-image: linear-gradient(to top, #8a6241 0%, #bd8659 100%);
   }
-  to {
+  33% {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#8a6241), color-stop(33%, #8a6241), to(#bd8659));
+    background-image: linear-gradient(to top, #8a6241 0%, #8a6241 33%, #bd8659 100%);
+  }
+  66% {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#8a6241), color-stop(66%, #8a6241), to(#bd8659));
+    background-image: linear-gradient(to top, #8a6241 0%, #8a6241 66%, #bd8659 100%);
+  }
+  100% {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#8a6241), to(#8a6241));
     background-image: linear-gradient(to top, #8a6241 0%, #8a6241 100%);
   }
 }
 @keyframes btn-hover {
-  from {
+  0% {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#8a6241), to(#bd8659));
     background-image: linear-gradient(to top, #8a6241 0%, #bd8659 100%);
   }
-  to {
+  33% {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#8a6241), color-stop(33%, #8a6241), to(#bd8659));
+    background-image: linear-gradient(to top, #8a6241 0%, #8a6241 33%, #bd8659 100%);
+  }
+  66% {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#8a6241), color-stop(66%, #8a6241), to(#bd8659));
+    background-image: linear-gradient(to top, #8a6241 0%, #8a6241 66%, #bd8659 100%);
+  }
+  100% {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#8a6241), to(#8a6241));
     background-image: linear-gradient(to top, #8a6241 0%, #8a6241 100%);
   }
 }
 .title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-size: 35px;
   font-weight: 700;
   line-height: 1.2;
@@ -577,8 +594,7 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 4px 50px;
   background-color: rgba(255, 255, 255, 0.15);
 }
 .menu__link {
@@ -595,11 +611,11 @@ address {
 }
 .promo {
   position: relative;
-  padding-top: 110px;
-  padding-bottom: 130px;
+  padding-top: 100px;
+  padding-bottom: 135px;
   color: #fff;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.35;
   font-weight: 300;
   text-align: center;
   background-color: #000;
@@ -609,8 +625,8 @@ address {
   background-position: top center;
 }
 .promo__title {
-  margin-top: 60px;
-  margin-bottom: 25px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   font-size: 35px;
   font-weight: 700;
   line-height: 1.2;
@@ -672,7 +688,7 @@ address {
   }
 }
 .booking {
-  margin-top: 40px;
+  margin-top: 45px;
 }
 .booking__wrap {
   display: -webkit-box;
@@ -690,7 +706,7 @@ address {
 .booking__date {
   width: 355px;
   height: 50px;
-  padding: 0 20px;
+  padding: 0 25px;
   font-size: 17px;
   color: #fff;
   border-radius: 25px;
@@ -710,8 +726,8 @@ address {
   background-color: #fff;
 }
 .number {
-  padding-top: 50px;
-  padding-bottom: 65px;
+  padding-top: 35px;
+  padding-bottom: 67px;
   position: relative;
 }
 .number__slider {
@@ -719,6 +735,8 @@ address {
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .number__slider .swiper-wrapper {
   -webkit-box-align: stretch;
@@ -769,6 +787,7 @@ address {
   padding: 10px;
   text-align: center;
   font-size: 20px;
+  line-height: 1.4;
 }
 .number__info p {
   margin: 0;
@@ -802,7 +821,7 @@ address {
   position: relative;
   z-index: 0;
   padding-top: 35px;
-  padding-bottom: 80px;
+  padding-bottom: 63px;
   color: #fff;
   background-color: #000;
   background-image: url(../img/bg-3.jpg);
@@ -830,13 +849,14 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 40px;
 }
 .about__info {
   width: 880px;
 }
 .about__info p {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .about__img {
   display: -webkit-box;
@@ -857,7 +877,7 @@ address {
   max-width: none;
 }
 .features {
-  padding-top: 50px;
+  padding-top: 35px;
 }
 .features__list {
   margin: 0;
@@ -874,15 +894,15 @@ address {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-top: 40px;
 }
 .features__item {
   width: 280px;
   margin-bottom: 40px;
   text-align: center;
-  font-size: 20px;
 }
 .features__item p {
-  margin-top: 8px;
+  margin-top: 25px;
   margin-bottom: 0;
 }
 .features__img {
@@ -908,8 +928,8 @@ address {
   width: 100%;
 }
 .slider__photo {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 .slider__photo .swiper-wrapper {
   -webkit-box-align: center;
@@ -962,12 +982,13 @@ address {
   right: calc(50% - 500px);
 }
 .review {
-  padding-bottom: 80px;
+  padding-bottom: 85px;
 }
 .review__slider {
   width: 1030px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
 }
 .review__prev {
   top: 50%;
@@ -995,8 +1016,10 @@ address {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 580px;
-  border: 1px solid #8d6443;
   z-index: -1;
+  border: 2px solid #8d6443;
+  border-image-source: linear-gradient(to top, #8a6241, #bd8659);
+  border-image-slice: 2;
 }
 .review__slide::after {
   content: "";
@@ -1032,7 +1055,7 @@ address {
 }
 .review__name {
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: 500;
   text-align: center;
 }
@@ -1051,11 +1074,11 @@ address {
   background-size: contain;
 }
 .review__info::before {
-  top: -15px;
+  top: -12px;
   left: -62px;
 }
 .review__info::after {
-  bottom: -10px;
+  bottom: -8px;
   right: -62px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -1090,8 +1113,8 @@ address {
   display: none;
 }
 .footer__menu {
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 25px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .footer__list {
@@ -1107,8 +1130,6 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .footer__link {
   font-size: 17px;
@@ -1131,9 +1152,9 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .footer__logo img {
   width: 181px;
@@ -1142,8 +1163,6 @@ address {
 .footer__contacts {
   text-align: right;
   margin-left: auto;
-  margin-right: 15px;
-  margin-bottom: 10px;
 }
 .mail:hover,
 .mail:active {
