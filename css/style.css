@@ -624,6 +624,9 @@ address {
   background-repeat: no-repeat;
   background-position: top center;
 }
+.promo--internal {
+  padding-bottom: 20px;
+}
 .promo__title {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -1167,6 +1170,98 @@ address {
 .mail:hover,
 .mail:active {
   text-decoration: underline;
+}
+.rooms {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.rooms__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.rooms__item {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d8cabf;
+}
+.rooms__item:last-child {
+  border-bottom: 0;
+}
+.rooms__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.rooms__photo {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.rooms__info {
+  width: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.rooms__info p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.rooms__info span {
+  color: #8c6342;
+}
+.rooms__btn {
+  width: 203px;
+  margin-top: auto;
+}
+.rooms__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 580px;
+  height: 295px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.rooms__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.rooms__img--small {
+  width: 280px;
+  margin-bottom: 0;
+}
+.rooms__img--small img {
+  height: 100%;
+  width: auto;
+  max-width: none;
+  min-width: 100%;
 }
 @media (max-width: 1400px) {
   .number__prev {
